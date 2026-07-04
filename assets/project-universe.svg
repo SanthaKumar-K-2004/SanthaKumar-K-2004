@@ -1,19 +1,22 @@
 <svg width="1400" height="620" viewBox="0 0 1400 620" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <!-- Spiderman Obsidian-Crimson Space Radial Gradient -->
     <radialGradient id="space" cx="50%" cy="42%" r="75%">
-      <stop offset="0" stop-color="#172554"/>
-      <stop offset="0.38" stop-color="#0f172a"/>
-      <stop offset="1" stop-color="#020617"/>
+      <stop offset="0" stop-color="#2a080c"/>
+      <stop offset="0.4" stop-color="#090d16"/>
+      <stop offset="1" stop-color="#020306"/>
     </radialGradient>
-    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#67e8f9"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
-    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0abfc"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
-    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#86efac"/><stop offset="1" stop-color="#16a34a"/></linearGradient>
-    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fde68a"/><stop offset="1" stop-color="#f97316"/></linearGradient>
-    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9a8d4"/><stop offset="1" stop-color="#db2777"/></linearGradient>
-    <linearGradient id="line" x1="160" y1="0" x2="1240" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#38bdf8"/><stop offset="0.5" stop-color="#a855f7"/><stop offset="1" stop-color="#22c55e"/></linearGradient>
+    
+    <!-- Spidey Red, Blue, and Gold Linear Gradients -->
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f43f5e"/><stop offset="1" stop-color="#be123c"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#d97706"/></linearGradient>
+    <linearGradient id="line" x1="160" y1="0" x2="1240" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#ef4444"/><stop offset="0.5" stop-color="#e2e8f0"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
+    
+    <!-- Glowing Filters -->
     <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#38bdf8" flood-opacity="0.35"/></filter>
-    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" stroke="#1e293b" stroke-width="1" opacity=".45"/></pattern>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#ef4444" flood-opacity="0.3"/></filter>
+    
     <style>
       text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
       @keyframes orbit{to{transform:rotate(360deg)}}
@@ -24,6 +27,8 @@
       @keyframes pulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.055)}}
       @keyframes shimmer{0%{transform:translateX(-1500px)}100%{transform:translateX(1500px)}}
       @keyframes type{0%,10%{opacity:0}25%,90%{opacity:1}100%{opacity:0}}
+      @keyframes webGlow{0%,100%{opacity:.2}50%{opacity:.45}}
+      
       .orbit{animation:orbit 34s linear infinite;transform-origin:700px 320px}
       .orbitR{animation:orbitR 45s linear infinite;transform-origin:700px 320px}
       .card{animation:float 5.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center;filter:url(#soft)}
@@ -32,85 +37,141 @@
       .pulse{animation:pulse 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center;filter:url(#glow)}
       .star{animation:floatSmall 4s ease-in-out infinite;opacity:.75}
       .shimmer{animation:shimmer 6s linear infinite}
+      .web-pulse{animation:webGlow 4s ease-in-out infinite}
       .t1{animation:type 6s ease-in-out infinite}.t2{animation:type 6s ease-in-out infinite;animation-delay:1.5s}.t3{animation:type 6s ease-in-out infinite;animation-delay:3s}.t4{animation:type 6s ease-in-out infinite;animation-delay:4.5s}
     </style>
   </defs>
 
+  <!-- Background Space -->
   <rect width="1400" height="620" rx="34" fill="url(#space)"/>
-  <rect width="1400" height="620" rx="34" fill="url(#grid)"/>
+  
+  <!-- High-Tech Spiderweb Grid Overlay -->
+  <g class="web-pulse" opacity="0.25">
+    <!-- Radial Threads -->
+    <line x1="700" y1="320" x2="100" y2="50" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="4 8" />
+    <line x1="700" y1="320" x2="1300" y2="50" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="4 8" />
+    <line x1="700" y1="320" x2="100" y2="590" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="4 8" />
+    <line x1="700" y1="320" x2="1300" y2="590" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="4 8" />
+    <line x1="700" y1="320" x2="700" y2="0" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4 8" />
+    <line x1="700" y1="320" x2="700" y2="620" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4 8" />
+    <line x1="700" y1="320" x2="0" y2="320" stroke="#ffffff" stroke-width="1" stroke-dasharray="4 8" opacity="0.5" />
+    <line x1="700" y1="320" x2="1400" y2="320" stroke="#ffffff" stroke-width="1" stroke-dasharray="4 8" opacity="0.5" />
+
+    <!-- Concentric Web Rings (Octagonal Web Shape) -->
+    <polygon points="700,240 756,264 780,320 756,376 700,400 644,376 620,320 644,264" fill="none" stroke="#f43f5e" stroke-width="1.2" />
+    <polygon points="700,160 812,208 860,320 812,432 700,480 588,432 540,320 588,208" fill="none" stroke="#3b82f6" stroke-width="1.2" />
+    <polygon points="700,80 868,152 940,320 868,488 700,560 532,488 460,320 532,152" fill="none" stroke="#fbbf24" stroke-width="1" />
+    <polygon points="700,0 924,96 1020,320 924,544 700,640 476,544 380,320 476,96" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.4" />
+  </g>
+  
   <rect class="shimmer" x="0" y="0" width="190" height="620" fill="url(#line)" opacity=".055"/>
 
+  <!-- Floating Star Elements -->
   <g opacity=".8">
-    <circle class="star" cx="145" cy="82" r="2" fill="#bae6fd"/><circle class="star" cx="1160" cy="88" r="2.5" fill="#ddd6fe" style="animation-delay:.7s"/><circle class="star" cx="1280" cy="460" r="2" fill="#bbf7d0" style="animation-delay:1.4s"/><circle class="star" cx="220" cy="510" r="2.2" fill="#fde68a" style="animation-delay:2.1s"/><circle class="star" cx="710" cy="92" r="2" fill="#f0abfc" style="animation-delay:1s"/>
+    <circle class="star" cx="145" cy="82" r="2" fill="#f43f5e"/><circle class="star" cx="1160" cy="88" r="2.5" fill="#3b82f6" style="animation-delay:.7s"/><circle class="star" cx="1280" cy="460" r="2" fill="#fbbf24" style="animation-delay:1.4s"/><circle class="star" cx="220" cy="510" r="2.2" fill="#ffffff" style="animation-delay:2.1s"/><circle class="star" cx="710" cy="92" r="2" fill="#f43f5e" style="animation-delay:1s"/>
   </g>
 
+  <!-- Title Text -->
   <text x="700" y="58" text-anchor="middle" fill="#f8fafc" font-size="34" font-weight="900">SANTHAKUMAR K — PROJECT UNIVERSE</text>
   <text x="700" y="90" text-anchor="middle" fill="#cbd5e1" font-size="15">AI Agents • Claude MCP • Full-Stack SaaS • Android • IoT • GovTech • Healthcare</text>
 
+  <!-- Animated Web Orbits -->
   <g class="orbit" opacity=".75">
     <ellipse cx="700" cy="320" rx="405" ry="142" stroke="url(#line)" stroke-width="1.5" stroke-dasharray="10 12"/>
-    <circle cx="1095" cy="320" r="6" fill="#38bdf8" filter="url(#glow)"/>
+    <circle cx="1095" cy="320" r="6" fill="#f43f5e" filter="url(#glow)"/>
   </g>
   <g class="orbitR" opacity=".65">
-    <ellipse cx="700" cy="320" rx="300" ry="218" stroke="#a855f7" stroke-width="1.2" stroke-dasharray="7 11"/>
-    <circle cx="700" cy="102" r="5" fill="#a855f7" filter="url(#glow)"/>
+    <ellipse cx="700" cy="320" rx="300" ry="218" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="7 11"/>
+    <circle cx="700" cy="102" r="5" fill="#3b82f6" filter="url(#glow)"/>
   </g>
 
-  <path class="dash" d="M700 320 C505 150 350 152 235 185" stroke="url(#line)" stroke-width="2" fill="none" opacity=".8"/>
-  <path class="dash" d="M700 320 C900 145 1048 155 1165 190" stroke="url(#line)" stroke-width="2" fill="none" opacity=".8"/>
-  <path class="dash" d="M700 320 C510 445 375 457 240 442" stroke="url(#line)" stroke-width="2" fill="none" opacity=".8"/>
-  <path class="dash" d="M700 320 C900 460 1040 460 1162 435" stroke="url(#line)" stroke-width="2" fill="none" opacity=".8"/>
-  <path class="dash" d="M700 320 C670 190 670 150 700 123" stroke="#a855f7" stroke-width="2" fill="none" opacity=".75"/>
-  <path class="dash" d="M700 320 C720 460 720 500 700 525" stroke="#22c55e" stroke-width="2" fill="none" opacity=".75"/>
+  <!-- Glowing Web Connecting Rays -->
+  <path class="dash" d="M700 320 C505 150 350 152 235 185" stroke="#3b82f6" stroke-width="2" fill="none" opacity=".8"/>
+  <path class="dash" d="M700 320 C900 145 1048 155 1165 190" stroke="#f43f5e" stroke-width="2" fill="none" opacity=".8"/>
+  <path class="dash" d="M700 320 C510 445 375 457 240 442" stroke="#3b82f6" stroke-width="2" fill="none" opacity=".8"/>
+  <path class="dash" d="M700 320 C900 460 1040 460 1162 435" stroke="#f43f5e" stroke-width="2" fill="none" opacity=".8"/>
+  <path class="dash" d="M700 320 C670 190 670 150 700 123" stroke="#ffffff" stroke-width="2" fill="none" opacity=".75"/>
+  <path class="dash" d="M700 320 C720 460 720 500 700 525" stroke="#fbbf24" stroke-width="2" fill="none" opacity=".75"/>
 
+  <!-- Centered Spidey Core -->
   <g class="pulse">
-    <circle cx="700" cy="320" r="88" fill="#020617" stroke="url(#line)" stroke-width="4"/>
-    <circle cx="700" cy="320" r="60" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" opacity=".9"/>
+    <!-- Web Core Circle Borders -->
+    <circle cx="700" cy="320" r="88" fill="#020306" stroke="url(#red)" stroke-width="4"/>
+    <circle cx="700" cy="320" r="62" fill="#090d16" stroke="#3b82f6" stroke-width="1.5" opacity=".9"/>
+    
+    <!-- Stylized Vector Spider Emblem Watermark -->
+    <g opacity="0.38" fill="#f43f5e">
+      <!-- Body/Head -->
+      <ellipse cx="700" cy="320" rx="9" ry="15" />
+      <circle cx="700" cy="301" r="5" />
+      <!-- Left Legs -->
+      <path d="M693 313 Q678 305 670 288 Q678 302 693 314 Z" />
+      <path d="M692 318 Q673 315 664 306 Q673 312 692 319 Z" />
+      <path d="M692 322 Q673 327 666 338 Q674 329 692 323 Z" />
+      <path d="M693 327 Q678 338 672 354 Q680 340 693 328 Z" />
+      <!-- Right Legs -->
+      <path d="M707 313 Q722 305 730 288 Q722 302 707 314 Z" />
+      <path d="M708 318 Q727 315 736 306 Q727 312 708 319 Z" />
+      <path d="M708 322 Q727 327 734 338 Q726 329 708 323 Z" />
+      <path d="M707 327 Q722 338 728 354 Q720 340 707 328 Z" />
+    </g>
+
+    <!-- Core Text Details -->
     <text x="700" y="306" text-anchor="middle" fill="#e0f2fe" font-size="22" font-weight="900">BUILDER</text>
-    <text x="700" y="333" text-anchor="middle" fill="#c4b5fd" font-size="13">Ship • Learn • Improve</text>
-    <text class="t1" x="700" y="360" text-anchor="middle" fill="#86efac" font-size="12">5+ Live Products</text>
-    <text class="t2" x="700" y="360" text-anchor="middle" fill="#67e8f9" font-size="12">1+ Year Experience</text>
-    <text class="t3" x="700" y="360" text-anchor="middle" fill="#fde68a" font-size="12">10/10 CGPA</text>
-    <text class="t4" x="700" y="360" text-anchor="middle" fill="#f0abfc" font-size="12">QS Top 10 Finalist</text>
+    <text x="700" y="333" text-anchor="middle" fill="#cbd5e1" font-size="13">Ship • Learn • Improve</text>
+    
+    <!-- Core Rotating Stats -->
+    <text class="t1" x="700" y="360" text-anchor="middle" fill="#f87171" font-size="12">5+ Live Products</text>
+    <text class="t2" x="700" y="360" text-anchor="middle" fill="#60a5fa" font-size="12">1+ Year Experience</text>
+    <text class="t3" x="700" y="360" text-anchor="middle" fill="#fbbf24" font-size="12">10/10 CGPA</text>
+    <text class="t4" x="700" y="360" text-anchor="middle" fill="#f472b6" font-size="12">QS Top 10 Finalist</text>
   </g>
 
+  <!-- Project Cards Layout (Centering and Alignment preserved mathematically) -->
+  
+  <!-- Card 1: ContextX Intelligence -->
   <g class="card">
-    <rect x="70" y="135" width="330" height="122" rx="24" fill="#020617" stroke="url(#blue)" stroke-width="2"/>
-    <text x="235" y="174" text-anchor="middle" fill="#67e8f9" font-size="22" font-weight="900">ContextX Intelligence</text>
+    <rect x="70" y="135" width="330" height="122" rx="24" fill="#020306" stroke="url(#blue)" stroke-width="2"/>
+    <text x="235" y="174" text-anchor="middle" fill="#60a5fa" font-size="22" font-weight="900">ContextX Intelligence</text>
     <text x="235" y="202" text-anchor="middle" fill="#e5e7eb" font-size="13">Claude MCP + Token Saver</text>
     <text x="235" y="228" text-anchor="middle" fill="#94a3b8" font-size="12">Rust · Local-first · Usage Monitor</text>
   </g>
 
+  <!-- Card 2: LinkedIn MCP Zero -->
   <g class="card2">
-    <rect x="1000" y="140" width="330" height="122" rx="24" fill="#020617" stroke="url(#purple)" stroke-width="2"/>
-    <text x="1165" y="179" text-anchor="middle" fill="#f0abfc" font-size="22" font-weight="900">LinkedIn MCP Zero</text>
+    <rect x="1000" y="140" width="330" height="122" rx="24" fill="#020306" stroke="url(#red)" stroke-width="2"/>
+    <text x="1165" y="179" text-anchor="middle" fill="#f87171" font-size="22" font-weight="900">LinkedIn MCP Zero</text>
     <text x="1165" y="207" text-anchor="middle" fill="#e5e7eb" font-size="13">Jobs • Resume • Matching</text>
     <text x="1165" y="233" text-anchor="middle" fill="#94a3b8" font-size="12">Python · Claude Desktop · Cursor</text>
   </g>
 
+  <!-- Card 3: TuitionOS -->
   <g class="card2">
-    <rect x="82" y="390" width="330" height="122" rx="24" fill="#020617" stroke="url(#green)" stroke-width="2"/>
-    <text x="247" y="429" text-anchor="middle" fill="#86efac" font-size="22" font-weight="900">TuitionOS</text>
+    <rect x="82" y="390" width="330" height="122" rx="24" fill="#020306" stroke="url(#blue)" stroke-width="2"/>
+    <text x="247" y="429" text-anchor="middle" fill="#60a5fa" font-size="22" font-weight="900">TuitionOS</text>
     <text x="247" y="457" text-anchor="middle" fill="#e5e7eb" font-size="13">Tuition Center Management</text>
     <text x="247" y="483" text-anchor="middle" fill="#94a3b8" font-size="12">Kotlin · Jetpack Compose · Supabase</text>
   </g>
 
+  <!-- Card 4: Jan-Seva AI -->
   <g class="card">
-    <rect x="1000" y="382" width="330" height="122" rx="24" fill="#020617" stroke="url(#orange)" stroke-width="2"/>
-    <text x="1165" y="421" text-anchor="middle" fill="#fde68a" font-size="22" font-weight="900">Jan-Seva AI</text>
+    <rect x="1000" y="382" width="330" height="122" rx="24" fill="#020306" stroke="url(#gold)" stroke-width="2"/>
+    <text x="1165" y="421" text-anchor="middle" fill="#fbbf24" font-size="22" font-weight="900">Jan-Seva AI</text>
     <text x="1165" y="449" text-anchor="middle" fill="#e5e7eb" font-size="13">Citizen Scheme Assistant</text>
     <text x="1165" y="475" text-anchor="middle" fill="#94a3b8" font-size="12">GovTech · RAG · Source Verification</text>
   </g>
 
+  <!-- Card 5: SRE-Bench -->
   <g class="card">
-    <rect x="535" y="104" width="330" height="96" rx="22" fill="#020617" stroke="url(#pink)" stroke-width="2"/>
-    <text x="700" y="143" text-anchor="middle" fill="#f9a8d4" font-size="21" font-weight="900">SRE-Bench</text>
+    <rect x="535" y="104" width="330" height="96" rx="22" fill="#020306" stroke="url(#blue)" stroke-width="2"/>
+    <text x="700" y="143" text-anchor="middle" fill="#60a5fa" font-size="21" font-weight="900">SRE-Bench</text>
     <text x="700" y="170" text-anchor="middle" fill="#cbd5e1" font-size="12">AI Incident Response Simulator</text>
   </g>
 
+  <!-- Card 6: LabLink + MediLink -->
   <g class="card2">
-    <rect x="535" y="488" width="330" height="96" rx="22" fill="#020617" stroke="url(#green)" stroke-width="2"/>
-    <text x="700" y="527" text-anchor="middle" fill="#86efac" font-size="21" font-weight="900">LabLink + MediLink</text>
+    <rect x="535" y="488" width="330" height="96" rx="22" fill="#020306" stroke="url(#red)" stroke-width="2"/>
+    <text x="700" y="527" text-anchor="middle" fill="#f87171" font-size="21" font-weight="900">LabLink + MediLink</text>
     <text x="700" y="554" text-anchor="middle" fill="#cbd5e1" font-size="12">Live Inventory + Healthcare Products</text>
   </g>
 </svg>
