@@ -198,133 +198,71 @@ mindmap
 
 ## 🚀 Live Product Showcase
 
-<table>
-<tr>
-<td width="50%">
+### 🧪 [LabLink — Lab Inventory System](https://lablink-inventory.vercel.app)
+*   **Description**: Live RBAC inventory platform with real-time analytics, QR integration, automated low-stock alerts, and Supabase-backed data management.
+*   **Impact**: Actively usable by institutions for lab asset and inventory operations.
+*   **Tech Stack**: <img src="https://skillicons.dev/icons?i=flutter,supabase,react,nodejs,vercel&theme=dark" height="26" />
 
-## 🧪 [LabLink — Lab Inventory System](https://lablink-inventory.vercel.app)
+---
 
-**Live RBAC inventory platform** with real-time analytics, QR integration, automated low-stock alerts, and Supabase-backed data management.
+### 🏥 [MediLink — AI Healthcare Platform](https://doctor1-five.vercel.app)
+*   **Description**: AI-powered doctor-patient platform with appointment scheduling, health recommendations, and real-time communication.
+*   **Impact**: Improves accessibility and workflow for healthcare interactions.
+*   **Tech Stack**: <img src="https://skillicons.dev/icons?i=react,vercel&theme=dark" height="26" />
 
-**Impact:** actively usable by institutions for lab asset and inventory operations.
+---
 
-`Flutter` · `Supabase` · `React.js` · `Node.js` · `QR Integration` · `Vercel`
+### 🤖 MarkOne AI — Multi-Language GenAI Agent
+*   **Description**: RAG-powered AI chatbot with multi-language NLP, persistent context retention, and automation across WhatsApp, Email, Telegram, and Google Drive.
+*   **Impact**: Reduced workflow effort by up to **70%**.
+*   **Tech Stack**: <img src="https://skillicons.dev/icons?i=python&theme=dark" height="26" /> &nbsp; `LangChain` · `Gemini API` · `RAG` · `NLP` · `Telegram Bot API`
 
-<a href="https://lablink-inventory.vercel.app"><img src="https://img.shields.io/badge/Open%20Live%20App-22C55E?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+---
 
-</td>
-<td width="50%">
+### ⚡ EnergiSync — IoT Smart Energy SaaS
+*   **Description**: Real-time energy monitoring SaaS using ESP32 + PZEM-004T, MQTT, Supabase, React Native, and AES-128 encryption.
+*   **Business Model**: ₹1,999 hardware + ₹99/month SaaS for Indian SMEs.
+*   **Tech Stack**: <img src="https://skillicons.dev/icons?i=supabase,react&theme=dark" height="26" /> &nbsp; `ESP32` · `PZEM-004T` · `MQTT` · `AES-128`
 
-## 🏥 [MediLink — AI Healthcare Platform](https://doctor1-five.vercel.app)
+---
 
-AI-powered doctor-patient platform with appointment scheduling, health recommendations, and real-time communication.
+### 💬 BizBot AI — WhatsApp AI SaaS
+*   **Description**: Multi-tenant WhatsApp AI platform with PostgreSQL RLS, Gemini AI, CI/CD, and WhatsApp Cloud API.
+*   **Market Focus**: Automation for India’s massive SMB ecosystem.
+*   **Tech Stack**: <img src="https://skillicons.dev/icons?i=postgres,githubactions&theme=dark" height="26" /> &nbsp; `WhatsApp Cloud API` · `Gemini AI` · `SaaS Architecture`
 
-**Impact:** improves accessibility and workflow for healthcare interactions.
+---
 
-`React.js` · `AI Recommendations` · `Scheduling` · `Realtime Communication` · `Vercel`
-
-<a href="https://doctor1-five.vercel.app"><img src="https://img.shields.io/badge/Open%20Live%20App-06B6D4?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-## 🤖 MarkOne AI — Multi-Language GenAI Agent
-
-RAG-powered AI chatbot with multi-language NLP, persistent context retention, and automation across WhatsApp, Email, Telegram, and Google Drive.
-
-**Impact:** reduced workflow effort by up to **70%**.
-
-`Python` · `LangChain` · `Gemini API` · `RAG` · `NLP` · `Telegram Bot API`
-
-</td>
-<td width="50%">
-
-## ⚡ EnergiSync — IoT Smart Energy SaaS
-
-Real-time energy monitoring SaaS using ESP32 + PZEM-004T, MQTT, Supabase, React Native, and AES-128 encryption.
-
-**Business model:** ₹1,999 hardware + ₹99/month SaaS for Indian SMEs.
-
-`ESP32` · `PZEM-004T` · `MQTT` · `Supabase` · `React Native` · `AES-128`
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-## 💬 BizBot AI — WhatsApp AI SaaS
-
-Multi-tenant WhatsApp AI platform with PostgreSQL RLS, Gemini AI, CI/CD, and WhatsApp Cloud API.
-
-**Market focus:** automation for India’s massive SMB ecosystem.
-
-`WhatsApp Cloud API` · `Gemini AI` · `PostgreSQL RLS` · `CI/CD` · `SaaS Architecture`
-
-</td>
-<td width="50%">
-
-## 🌐 [3D Portfolio](https://santhakumar-portfolio.vercel.app)
-
-Interactive portfolio showing full-stack, AI integration, and product-building identity with modern visuals.
-
-**Goal:** turn profile visitors into collaborators, recruiters, and users.
-
-`React` · `Three.js` · `Tailwind CSS` · `Framer Motion` · `Vercel`
-
-<a href="https://santhakumar-portfolio.vercel.app"><img src="https://img.shields.io/badge/View%20Portfolio-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-
-</td>
-</tr>
-</table>
+### 🌐 [3D Portfolio](https://santhakumar-portfolio.vercel.app)
+*   **Description**: Interactive portfolio showing full-stack, AI integration, and product-building identity with modern visuals.
+*   **Goal**: Turn profile visitors into collaborators, recruiters, and users.
+*   **Tech Stack**: <img src="https://skillicons.dev/icons?i=react,threejs,tailwind,vercel&theme=dark" height="26" />
 
 ---
 
 ## 🧠 Featured Repositories
 
-<table>
-<tr>
-<td width="50%">
-
 ### 🧩 [ContextX Intelligence](https://github.com/SanthaKumar-K-2004/ContextX-Intelligence)
+*   **Description**: Local-first Claude usage monitor and context token saver built as a Rust CLI with MCP tools, reversible compression, proxy support, and privacy-first design.
+*   **Tech Stack**: <img src="https://skillicons.dev/icons?i=rust&theme=dark" height="26" /> &nbsp; `MCP` · `AI Tools` · `Local-first` · `CLI`
 
-Local-first Claude usage monitor and context token saver built as a Rust CLI with MCP tools, reversible compression, proxy support, and privacy-first design.
-
-`Rust` · `MCP` · `AI Tools` · `Local-first` · `CLI`
-
-</td>
-<td width="50%">
+---
 
 ### 🔗 [LinkedIn MCP Zero](https://github.com/SanthaKumar-K-2004/linkedin-mcp-zero)
+*   **Description**: Public-first MCP server for LinkedIn jobs, resumes, matching, alerts, exports, and opt-in browser intelligence.
+*   **Tech Stack**: <img src="https://skillicons.dev/icons?i=python&theme=dark" height="26" /> &nbsp; `MCP` · `Jobs` · `Automation` · `Claude Desktop`
 
-Public-first MCP server for LinkedIn jobs, resumes, matching, alerts, exports, and opt-in browser intelligence.
-
-`Python` · `MCP` · `Jobs` · `Automation` · `Claude Desktop`
-
-</td>
-</tr>
-<tr>
-<td width="50%">
+---
 
 ### 🏛️ [Jan-Seva AI](https://github.com/SanthaKumar-K-2004/Jan-seva-AI)
+*   **Description**: API-first AI assistant to help Indian citizens discover government schemes, understand eligibility, and get application support.
+*   **Tech Stack**: <img src="https://skillicons.dev/icons?i=python&theme=dark" height="26" /> &nbsp; `GovTech` · `LLM Failover` · `Source Verification`
 
-API-first AI assistant to help Indian citizens discover government schemes, understand eligibility, and get application support.
-
-`Python` · `GovTech` · `LLM Failover` · `Source Verification`
-
-</td>
-<td width="50%">
+---
 
 ### 🧯 [SRE-Bench](https://github.com/SanthaKumar-K-2004/SRE)
-
-Deterministic reinforcement-learning environment for training and evaluating AI agents on incident response workflows.
-
-`Python` · `FastAPI` · `RL Environment` · `SRE` · `Agent Evaluation`
-
-</td>
-</tr>
-</table>
+*   **Description**: Deterministic reinforcement-learning environment for training and evaluating AI agents on incident response workflows.
+*   **Tech Stack**: <img src="https://skillicons.dev/icons?i=python,fastapi&theme=dark" height="26" /> &nbsp; `RL Environment` · `SRE` · `Agent Evaluation`
 
 ---
 
