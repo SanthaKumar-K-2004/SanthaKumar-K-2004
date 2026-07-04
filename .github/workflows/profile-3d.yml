@@ -1,0 +1,28 @@
+# Optional world-class visual: 3D contribution calendar
+# Save as: .github/workflows/profile-3d.yml
+# After it runs, add this to README:
+# <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" />
+
+name: GitHub Profile 3D Contrib
+
+on:
+  schedule:
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: SanthaKumar-K-2004
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          git commit -m "generated 3d contribution profile" || exit 0
+          git push
