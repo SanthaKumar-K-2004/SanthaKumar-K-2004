@@ -2,8 +2,8 @@
   <defs>
     <!-- Spiderman Obsidian-Crimson Space Radial Gradient -->
     <radialGradient id="space" cx="50%" cy="42%" r="75%">
-      <stop offset="0" stop-color="#2a080c"/>
-      <stop offset="0.4" stop-color="#090d16"/>
+      <stop offset="0" stop-color="#1f0407"/>
+      <stop offset="0.4" stop-color="#070a12"/>
       <stop offset="1" stop-color="#020306"/>
     </radialGradient>
     
@@ -15,29 +15,29 @@
     
     <!-- Glowing Filters -->
     <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#ef4444" flood-opacity="0.3"/></filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ef4444" flood-opacity="0.25"/></filter>
     
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" stroke="#1e293b" stroke-width="1" opacity=".35"/></pattern>
+
     <style>
       text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
       @keyframes orbit{to{transform:rotate(360deg)}}
       @keyframes orbitR{to{transform:rotate(-360deg)}}
-      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
-      @keyframes floatSmall{0%,100%{transform:translateY(0) translateX(0)}50%{transform:translateY(-8px) translateX(5px)}}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+      @keyframes floatSmall{0%,100%{transform:translateY(0) translateX(0)}50%{transform:translateY(-5px) translateX(3px)}}
       @keyframes dash{to{stroke-dashoffset:-360}}
-      @keyframes pulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.055)}}
+      @keyframes pulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.05)}}
       @keyframes shimmer{0%{transform:translateX(-1500px)}100%{transform:translateX(1500px)}}
       @keyframes type{0%,10%{opacity:0}25%,90%{opacity:1}100%{opacity:0}}
-      @keyframes webGlow{0%,100%{opacity:.2}50%{opacity:.45}}
       
       .orbit{animation:orbit 34s linear infinite;transform-origin:700px 320px}
       .orbitR{animation:orbitR 45s linear infinite;transform-origin:700px 320px}
-      .card{animation:float 5.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center;filter:url(#soft)}
-      .card2{animation:float 6.8s ease-in-out infinite reverse;transform-box:fill-box;transform-origin:center;filter:url(#soft)}
+      .card{animation:float 5.8s ease-in-out infinite;filter:url(#soft)}
+      .card2{animation:float 5.8s ease-in-out infinite reverse;filter:url(#soft)}
       .dash{stroke-dasharray:16 14;animation:dash 9s linear infinite}
       .pulse{animation:pulse 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center;filter:url(#glow)}
       .star{animation:floatSmall 4s ease-in-out infinite;opacity:.75}
       .shimmer{animation:shimmer 6s linear infinite}
-      .web-pulse{animation:webGlow 4s ease-in-out infinite}
       .t1{animation:type 6s ease-in-out infinite}.t2{animation:type 6s ease-in-out infinite;animation-delay:1.5s}.t3{animation:type 6s ease-in-out infinite;animation-delay:3s}.t4{animation:type 6s ease-in-out infinite;animation-delay:4.5s}
     </style>
   </defs>
@@ -45,24 +45,8 @@
   <!-- Background Space -->
   <rect width="1400" height="620" rx="34" fill="url(#space)"/>
   
-  <!-- High-Tech Spiderweb Grid Overlay -->
-  <g class="web-pulse" opacity="0.25">
-    <!-- Radial Threads -->
-    <line x1="700" y1="320" x2="100" y2="50" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="4 8" />
-    <line x1="700" y1="320" x2="1300" y2="50" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="4 8" />
-    <line x1="700" y1="320" x2="100" y2="590" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="4 8" />
-    <line x1="700" y1="320" x2="1300" y2="590" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="4 8" />
-    <line x1="700" y1="320" x2="700" y2="0" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4 8" />
-    <line x1="700" y1="320" x2="700" y2="620" stroke="#fbbf24" stroke-width="1" stroke-dasharray="4 8" />
-    <line x1="700" y1="320" x2="0" y2="320" stroke="#ffffff" stroke-width="1" stroke-dasharray="4 8" opacity="0.5" />
-    <line x1="700" y1="320" x2="1400" y2="320" stroke="#ffffff" stroke-width="1" stroke-dasharray="4 8" opacity="0.5" />
-
-    <!-- Concentric Web Rings (Octagonal Web Shape) -->
-    <polygon points="700,240 756,264 780,320 756,376 700,400 644,376 620,320 644,264" fill="none" stroke="#f43f5e" stroke-width="1.2" />
-    <polygon points="700,160 812,208 860,320 812,432 700,480 588,432 540,320 588,208" fill="none" stroke="#3b82f6" stroke-width="1.2" />
-    <polygon points="700,80 868,152 940,320 868,488 700,560 532,488 460,320 532,152" fill="none" stroke="#fbbf24" stroke-width="1" />
-    <polygon points="700,0 924,96 1020,320 924,544 700,640 476,544 380,320 476,96" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.4" />
-  </g>
+  <!-- Subtle Grid Overlay -->
+  <rect width="1400" height="620" rx="34" fill="url(#grid)"/>
   
   <rect class="shimmer" x="0" y="0" width="190" height="620" fill="url(#line)" opacity=".055"/>
 
@@ -75,23 +59,25 @@
   <text x="700" y="58" text-anchor="middle" fill="#f8fafc" font-size="34" font-weight="900">SANTHAKUMAR K — PROJECT UNIVERSE</text>
   <text x="700" y="90" text-anchor="middle" fill="#cbd5e1" font-size="15">AI Agents • Claude MCP • Full-Stack SaaS • Android • IoT • GovTech • Healthcare</text>
 
-  <!-- Animated Web Orbits -->
-  <g class="orbit" opacity=".75">
-    <ellipse cx="700" cy="320" rx="405" ry="142" stroke="url(#line)" stroke-width="1.5" stroke-dasharray="10 12"/>
-    <circle cx="1095" cy="320" r="6" fill="#f43f5e" filter="url(#glow)"/>
+  <!-- Static Concentric Orbits (Circles to avoid wobbly rotation) -->
+  <circle cx="700" cy="320" r="280" stroke="url(#line)" stroke-width="1.2" stroke-dasharray="8 10" fill="none" opacity="0.6"/>
+  <circle cx="700" cy="320" r="180" stroke="#fbbf24" stroke-width="1" stroke-dasharray="6 8" fill="none" opacity="0.5"/>
+
+  <!-- Animated Orbiting Dots (Correctly rotating around center) -->
+  <g class="orbit" opacity="0.8">
+    <circle cx="980" cy="320" r="6" fill="#f43f5e" filter="url(#glow)"/>
   </g>
-  <g class="orbitR" opacity=".65">
-    <ellipse cx="700" cy="320" rx="300" ry="218" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="7 11"/>
-    <circle cx="700" cy="102" r="5" fill="#3b82f6" filter="url(#glow)"/>
+  <g class="orbitR" opacity="0.8">
+    <circle cx="700" cy="140" r="5" fill="#3b82f6" filter="url(#glow)"/>
   </g>
 
-  <!-- Glowing Web Connecting Rays -->
-  <path class="dash" d="M700 320 C505 150 350 152 235 185" stroke="#3b82f6" stroke-width="2" fill="none" opacity=".8"/>
-  <path class="dash" d="M700 320 C900 145 1048 155 1165 190" stroke="#f43f5e" stroke-width="2" fill="none" opacity=".8"/>
-  <path class="dash" d="M700 320 C510 445 375 457 240 442" stroke="#3b82f6" stroke-width="2" fill="none" opacity=".8"/>
-  <path class="dash" d="M700 320 C900 460 1040 460 1162 435" stroke="#f43f5e" stroke-width="2" fill="none" opacity=".8"/>
-  <path class="dash" d="M700 320 C670 190 670 150 700 123" stroke="#ffffff" stroke-width="2" fill="none" opacity=".75"/>
-  <path class="dash" d="M700 320 C720 460 720 500 700 525" stroke="#fbbf24" stroke-width="2" fill="none" opacity=".75"/>
+  <!-- Glowing Connection Rays -->
+  <path class="dash" d="M700 320 C500 240 380 200 235 196" stroke="#3b82f6" stroke-width="1.5" fill="none" opacity=".6"/>
+  <path class="dash" d="M700 320 C900 240 1020 200 1165 201" stroke="#f43f5e" stroke-width="1.5" fill="none" opacity=".6"/>
+  <path class="dash" d="M700 320 C500 400 380 440 247 451" stroke="#3b82f6" stroke-width="1.5" fill="none" opacity=".6"/>
+  <path class="dash" d="M700 320 C900 400 1020 440 1165 443" stroke="#f43f5e" stroke-width="1.5" fill="none" opacity=".6"/>
+  <path class="dash" d="M700 320 L700 152" stroke="#ffffff" stroke-width="1.5" fill="none" opacity=".6"/>
+  <path class="dash" d="M700 320 L700 536" stroke="#fbbf24" stroke-width="1.5" fill="none" opacity=".6"/>
 
   <!-- Centered Spidey Core -->
   <g class="pulse">
@@ -100,7 +86,7 @@
     <circle cx="700" cy="320" r="62" fill="#090d16" stroke="#3b82f6" stroke-width="1.5" opacity=".9"/>
     
     <!-- Stylized Vector Spider Emblem Watermark -->
-    <g opacity="0.38" fill="#f43f5e">
+    <g opacity="0.25" fill="#f43f5e">
       <!-- Body/Head -->
       <ellipse cx="700" cy="320" rx="9" ry="15" />
       <circle cx="700" cy="301" r="5" />
@@ -127,7 +113,7 @@
     <text class="t4" x="700" y="360" text-anchor="middle" fill="#f472b6" font-size="12">QS Top 10 Finalist</text>
   </g>
 
-  <!-- Project Cards Layout (Centering and Alignment preserved mathematically) -->
+  <!-- Project Cards Layout -->
   
   <!-- Card 1: ContextX Intelligence -->
   <g class="card">
