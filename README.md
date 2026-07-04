@@ -421,6 +421,13 @@ The animation below is dynamically updated by the Github Action workflow in [.gi
 <div align="center">
 
 <a href="https://gitfut.com/SanthaKumar-K-2004?country=in">
+  <img src="https://gitfut.com/SanthaKumar-K-2004.png" width="340" alt="Santhakumar K GitFut Scouting Card" />
+</a>
+
+<br />
+<br />
+
+<a href="https://gitfut.com/SanthaKumar-K-2004?country=in">
   <img src="https://img.shields.io/badge/Position-CAM-38BDF8?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Rating-56%20Bronze-F59E0B?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Playstyle-Polyglot-A855F7?style=for-the-badge" />
