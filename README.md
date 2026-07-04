@@ -155,44 +155,7 @@ I’m a **results-driven Full-Stack Developer and AI Engineer** with experience 
 
 ### Specialized Strengths
 
-```mermaid
-mindmap
-  root((Santhakumar K))
-    AI Engineering
-      LangChain
-      RAG
-      Gemini API
-      Ollama
-      NLP
-      AI Agents
-    Full Stack
-      React.js
-      Next.js
-      Node.js
-      Express
-      FastAPI
-      REST APIs
-    Cloud and DevOps
-      AWS EC2/S3/Lambda
-      Oracle Cloud
-      Docker
-      CI/CD
-      Vercel
-      Railway
-    Databases
-      PostgreSQL
-      Supabase
-      MongoDB
-      MySQL
-      Neon
-      Row-Level Security
-    IoT
-      ESP32
-      PZEM-004T
-      MQTT
-      BLE 5.0
-      AES-128
-```
+<img src="./assets/specialized-strengths.svg" width="100%" alt="Specialized Strengths - Great Houses of Code" />
 
 ---
 

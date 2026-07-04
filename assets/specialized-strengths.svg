@@ -1,0 +1,158 @@
+<svg width="1400" height="650" viewBox="0 0 1400 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Google Fonts Import for Game of Thrones Serif Aesthetics -->
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&amp;family=Cinzel+Decorative:wght@700&amp;family=Montserrat:wght@400;600&amp;display=swap');
+      
+      text.got-title { font-family: 'Cinzel Decorative', serif; font-weight: 700; }
+      text.got-house { font-family: 'Cinzel', serif; font-weight: 900; letter-spacing: 2px; }
+      text.got-motto { font-family: 'Cinzel', serif; font-weight: 600; font-style: italic; letter-spacing: 1px; }
+      text.got-skills { font-family: 'Montserrat', sans-serif; font-weight: 600; }
+      
+      @keyframes floatStark { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      @keyframes floatTargaryen { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+      @keyframes floatLannister { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+      @keyframes floatGreyjoy { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+      @keyframes floatBaratheon { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-11px); } }
+      @keyframes fireGlow { 0%, 100% { opacity: 0.3; filter: drop-shadow(0 0 5px #dc2626); } 50% { opacity: 0.7; filter: drop-shadow(0 0 20px #f97316); } }
+      @keyframes pulseThrone { 0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px #c5a059); } 50% { transform: scale(1.03); filter: drop-shadow(0 0 25px #fbbf24); } }
+      @keyframes shiver { 0%, 100% { transform: rotate(0deg); } 25% { transform: rotate(0.5deg); } 75% { transform: rotate(-0.5deg); } }
+      
+      .stark-card { animation: floatStark 6s ease-in-out infinite; }
+      .targaryen-card { animation: floatTargaryen 5.5s ease-in-out infinite; }
+      .lannister-card { animation: floatLannister 6.5s ease-in-out infinite; }
+      .greyjoy-card { animation: floatGreyjoy 5.8s ease-in-out infinite; }
+      .baratheon-card { animation: floatBaratheon 6.2s ease-in-out infinite; }
+      .fire { animation: fireGlow 4s ease-in-out infinite; }
+      .throne { animation: pulseThrone 3.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .shiver { animation: shiver 0.2s linear infinite; }
+    </style>
+
+    <!-- Game of Thrones Weathered Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1c1613"/> <!-- Warm glowing embers -->
+      <stop offset="60%" stop-color="#0a0a0c"/> <!-- Dark iron grey -->
+      <stop offset="100%" stop-color="#020203"/> <!-- Cold obsidian black -->
+    </radialGradient>
+
+    <!-- House Color Gradients -->
+    <linearGradient id="stark-grad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2e8f0"/><stop offset="1" stop-color="#475569"/></linearGradient>
+    <linearGradient id="targaryen-grad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ef4444"/><stop offset="1" stop-color="#7f1d1d"/></linearGradient>
+    <linearGradient id="lannister-grad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#b45309"/></linearGradient>
+    <linearGradient id="greyjoy-grad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#1e3a8a"/></linearGradient>
+    <linearGradient id="baratheon-grad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f59e0b"/><stop offset="1" stop-color="#78350f"/></linearGradient>
+    <linearGradient id="gold-border" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8a6f3e"/><stop offset="50%" stop-color="#e8d09b"/><stop offset="100%" stop-color="#8a6f3e"/></linearGradient>
+
+    <!-- Glow/Soft Shadow Filters -->
+    <filter id="gold-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="iron-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.8"/></filter>
+  </defs>
+
+  <!-- Weathered Obsidian Canvas -->
+  <rect width="1400" height="650" rx="36" fill="url(#bg-grad)" stroke="url(#gold-border)" stroke-width="3.5" filter="url(#iron-shadow)"/>
+  
+  <!-- Subtle iron-grid/mesh in background -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,50 L 1400,50 M 0,100 L 1400,100 M 0,150 L 1400,150 M 0,200 L 1400,200 M 0,250 L 1400,250 M 0,300 L 1400,300 M 0,350 L 1400,350 M 0,400 L 1400,400 M 0,450 L 1400,450 M 0,500 L 1400,500 M 0,550 L 1400,550 M 0,600 L 1400,600" />
+    <path d="M 100,0 L 100,650 M 200,0 L 200,650 M 300,0 L 300,650 M 400,0 L 400,650 M 500,0 L 500,650 M 600,0 L 600,650 M 700,0 L 700,650 M 800,0 L 800,650 M 900,0 L 900,650 M 100,0 L 1000,650 M 1100,0 L 1100,650 M 1200,0 L 1200,650 M 1300,0 L 1300,650" />
+  </g>
+
+  <!-- Header Section -->
+  <g transform="translate(0, 52)">
+    <text class="got-title" x="700" y="0" text-anchor="middle" fill="url(#gold-border)" font-size="32" font-weight="900" filter="url(#gold-glow)">SPECIALIZED STRENGTHS</text>
+    <text class="got-motto" x="700" y="28" text-anchor="middle" fill="#94a3b8" font-size="14">"The Great Houses of Code — Deployed in the Realms of Production"</text>
+  </g>
+
+  <!-- Connection Lines (Dragon Fire Chains / Magical Webbing) -->
+  <g opacity="0.3">
+    <!-- Targaryen Red Chain (AI) -->
+    <path class="fire" d="M 700,325 L 700,165" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="6 8"/>
+    <!-- Stark Silver Chain (Full Stack) -->
+    <path d="M 700,325 L 240,205" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 8"/>
+    <!-- Lannister Gold Chain (Cloud) -->
+    <path d="M 700,325 L 1160,205" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6 8"/>
+    <!-- Greyjoy Blue Chain (Databases) -->
+    <path d="M 700,325 L 240,485" stroke="#22d3ee" stroke-width="2" stroke-dasharray="6 8"/>
+    <!-- Baratheon Amber Chain (IoT) -->
+    <path d="M 700,325 L 1160,485" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 8"/>
+  </g>
+
+  <!-- Centerpiece: The Iron Throne Sigil -->
+  <g class="throne" transform="translate(0, 0)">
+    <!-- Glowing Sigil Circle -->
+    <circle cx="700" cy="325" r="76" fill="#0c0a09" stroke="url(#gold-border)" stroke-width="3" filter="url(#gold-glow)"/>
+    <circle cx="700" cy="325" r="70" fill="#181412" stroke="#8a6f3e" stroke-width="1"/>
+    
+    <!-- Vector Crown/Throne graphic -->
+    <path d="M 670,335 L 670,305 L 680,315 L 690,295 L 700,312 L 710,295 L 720,315 L 730,305 L 730,335 Z" fill="#c5a059" opacity="0.8"/>
+    <circle cx="700" cy="320" r="14" fill="none" stroke="url(#gold-border)" stroke-width="2" />
+    
+    <text class="got-house" x="700" y="362" text-anchor="middle" fill="#f8fafc" font-size="13">LORD BUILDER</text>
+    <text class="got-motto" x="700" y="378" text-anchor="middle" fill="url(#gold-border)" font-size="10">SANTHAKUMAR K</text>
+  </g>
+
+  <!-- ==================== HOUSE TARGARYEN (AI ENGINEERING) ==================== -->
+  <g class="targaryen-card">
+    <!-- Card Frame -->
+    <rect x="535" y="110" width="330" height="120" rx="14" fill="#0a0505" stroke="url(#targaryen-grad)" stroke-width="2" filter="url(#iron-shadow)"/>
+    <!-- Sigil Emblem (Three-Headed Dragon Profile silhouette) -->
+    <path d="M 552,142 C 555,130 575,130 580,145 C 570,140 560,150 565,160 C 555,155 548,162 550,172 C 556,168 565,172 562,182 M 562,142 C 572,135 585,152 575,165" fill="#ef4444" opacity="0.3" stroke="#ef4444" stroke-width="0.8"/>
+    <!-- Banner Content -->
+    <text class="got-house" x="700" y="145" text-anchor="middle" fill="#fca5a5" font-size="17">HOUSE TARGARYEN</text>
+    <text class="got-motto" x="700" y="165" text-anchor="middle" fill="#ef4444" font-size="11">"FIRE &amp; INTELLIGENCE" — AI Engineering</text>
+    <line x1="585" y1="180" x2="815" y2="180" stroke="#7f1d1d" stroke-width="1.2"/>
+    <text class="got-skills" x="700" y="202" text-anchor="middle" fill="#cbd5e1" font-size="11">LangChain • RAG • Gemini API • AI Agents • NLP</text>
+  </g>
+
+  <!-- ==================== HOUSE STARK (FULL STACK) ==================== -->
+  <g class="stark-card">
+    <!-- Card Frame -->
+    <rect x="75" y="200" width="330" height="120" rx="14" fill="#07080a" stroke="url(#stark-grad)" stroke-width="2" filter="url(#iron-shadow)"/>
+    <!-- Sigil Emblem (Direwolf head silhouette) -->
+    <path d="M 90,230 L 105,235 L 115,245 L 102,250 L 112,262 L 95,258 L 92,268 L 86,252 L 80,246 Z" fill="#cbd5e1" opacity="0.25" stroke="#cbd5e1" stroke-width="0.8"/>
+    <!-- Banner Content -->
+    <text class="got-house" x="240" y="235" text-anchor="middle" fill="#e2e8f0" font-size="17">HOUSE STARK</text>
+    <text class="got-motto" x="240" y="255" text-anchor="middle" fill="#94a3b8" font-size="11">"WINTER IS COMING" — Web &amp; Full Stack</text>
+    <line x1="125" y1="270" x2="355" y2="270" stroke="#475569" stroke-width="1.2"/>
+    <text class="got-skills" x="240" y="292" text-anchor="middle" fill="#cbd5e1" font-size="11">React.js • Next.js • Node.js • FastAPI • REST</text>
+  </g>
+
+  <!-- ==================== HOUSE LANNISTER (CLOUD & DEVOPS) ==================== -->
+  <g class="lannister-card">
+    <!-- Card Frame -->
+    <rect x="995" y="200" width="330" height="120" rx="14" fill="#0a0907" stroke="url(#lannister-grad)" stroke-width="2" filter="url(#iron-shadow)"/>
+    <!-- Sigil Emblem (Lion Profile silhouette) -->
+    <path d="M 1010,232 C 1015,225 1028,225 1032,235 C 1026,242 1032,252 1025,258 C 1022,252 1014,258 1018,266 C 1010,260 1008,245 1010,232 Z" fill="#fbbf24" opacity="0.25" stroke="#fbbf24" stroke-width="0.8"/>
+    <!-- Banner Content -->
+    <text class="got-house" x="1160" y="235" text-anchor="middle" fill="#fef08a" font-size="17">HOUSE LANNISTER</text>
+    <text class="got-motto" x="1160" y="255" text-anchor="middle" fill="#d97706" font-size="11">"HEAR ME ROAR" — Cloud &amp; DevOps</text>
+    <line x1="1045" y1="270" x2="1275" y2="270" stroke="#78350f" stroke-width="1.2"/>
+    <text class="got-skills" x="1160" y="292" text-anchor="middle" fill="#cbd5e1" font-size="11">AWS • Oracle Cloud • Docker • CI/CD • Vercel</text>
+  </g>
+
+  <!-- ==================== HOUSE GREYJOY (DATABASES) ==================== -->
+  <g class="greyjoy-card">
+    <!-- Card Frame -->
+    <rect x="75" y="440" width="330" height="120" rx="14" fill="#05080a" stroke="url(#greyjoy-grad)" stroke-width="2" filter="url(#iron-shadow)"/>
+    <!-- Sigil Emblem (Kraken tentacles silhouette) -->
+    <path d="M 90,480 Q 100,470 105,485 Q 110,500 95,502 Q 105,492 115,488 Q 120,470 110,465" fill="#22d3ee" opacity="0.25" stroke="#22d3ee" stroke-width="0.8"/>
+    <!-- Banner Content -->
+    <text class="got-house" x="240" y="475" text-anchor="middle" fill="#a5f3fc" font-size="17">HOUSE GREYJOY</text>
+    <text class="got-motto" x="240" y="495" text-anchor="middle" fill="#06b6d4" font-size="11">"WE DO NOT SOW" — Databases &amp; Security</text>
+    <line x1="125" y1="510" x2="355" y2="510" stroke="#1e3a8a" stroke-width="1.2"/>
+    <text class="got-skills" x="240" y="532" text-anchor="middle" fill="#cbd5e1" font-size="11">PostgreSQL • Supabase • RLS • MongoDB • MySQL</text>
+  </g>
+
+  <!-- ==================== HOUSE BARATHEON (IOT & HARDWARE) ==================== -->
+  <g class="baratheon-card">
+    <!-- Card Frame -->
+    <rect x="995" y="440" width="330" height="120" rx="14" fill="#0a0805" stroke="url(#baratheon-grad)" stroke-width="2" filter="url(#iron-shadow)"/>
+    <!-- Sigil Emblem (Stag Antlers silhouette) -->
+    <path d="M 1010,465 L 1018,472 L 1025,465 L 1022,480 L 1032,488 L 1015,482 Z" fill="#f59e0b" opacity="0.25" stroke="#f59e0b" stroke-width="0.8"/>
+    <!-- Banner Content -->
+    <text class="got-house" x="1160" y="475" text-anchor="middle" fill="#fde68a" font-size="17">HOUSE BARATHEON</text>
+    <text class="got-motto" x="1160" y="495" text-anchor="middle" fill="#d97706" font-size="11">"OURS IS THE FURY" — IoT &amp; Hardware</text>
+    <line x1="1045" y1="510" x2="1275" y2="510" stroke="#78350f" stroke-width="1.2"/>
+    <text class="got-skills" x="1160" y="532" text-anchor="middle" fill="#cbd5e1" font-size="11">ESP32 • PZEM-004T • MQTT • BLE 5.0 • AES-128</text>
+  </g>
+</svg>
