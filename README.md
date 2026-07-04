@@ -17,7 +17,7 @@
 <br />
 <br />
 
-<a href="mailto:santhakumar0024@gmail.com"><img src="https://img.shields.io/badge/Email-santhakumar0024%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="mailto:santhakumark776@gmail.com"><img src="https://img.shields.io/badge/Email-santhakumark776%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="https://linkedin.com/in/santhakumar-k-32b9562bb"><img src="https://img.shields.io/badge/LinkedIn-Santhakumar%20K-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="https://santhakumar-portfolio.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Live-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
 <a href="https://github.com/SanthaKumar-K-2004"><img src="https://img.shields.io/badge/GitHub-SanthaKumar--K--2004-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
@@ -57,7 +57,7 @@ Every visitor has a different goal. Click your path below to find the exact proo
 | **🤖 AI Builder / Engineer** | [🧩 Explore ContextX Intelligence](https://github.com/SanthaKumar-K-2004/ContextX-Intelligence) | [🔗 Check LinkedIn MCP Server](https://github.com/SanthaKumar-K-2004/linkedin-mcp-zero) |
 | **🏫 Institution / Educator** | [🧪 Open LabLink Live App](https://lablink-inventory.vercel.app) | [📂 Browse Repositories](https://github.com/SanthaKumar-K-2004?tab=repositories) |
 | **🏥 Healthcare / Impact Partner** | [🏥 Open MediLink Live App](https://doctor1-five.vercel.app) | [🏛️ Check Jan-Seva GovTech AI](https://github.com/SanthaKumar-K-2004/Jan-seva-AI) |
-| **🚀 Founder / SMB Owner** | [💬 Contact via Email](mailto:santhakumar0024@gmail.com) | [🤖 Check MarkOne Multi-Agent AI](https://github.com/SanthaKumar-K-2004) |
+| **🚀 Founder / SMB Owner** | [💬 Contact via Email](mailto:santhakumark776@gmail.com) | [🤖 Check MarkOne Multi-Agent AI](https://github.com/SanthaKumar-K-2004) |
 
 ---
 
@@ -465,7 +465,7 @@ journey
 
 <div align="center">
 
-<a href="mailto:santhakumar0024@gmail.com"><img src="https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="mailto:santhakumark776@gmail.com"><img src="https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <a href="https://linkedin.com/in/santhakumar-k-32b9562bb"><img src="https://img.shields.io/badge/LinkedIn-Let's%20Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="https://santhakumar-portfolio.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Visit-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" /></a>
 <a href="https://github.com/SanthaKumar-K-2004?tab=repositories"><img src="https://img.shields.io/badge/Repositories-Explore-181717?style=for-the-badge&logo=github" /></a>
