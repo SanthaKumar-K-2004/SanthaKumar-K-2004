@@ -33,7 +33,7 @@
 
 <br />
 
-<img src="./assets/project-universe.svg" width="100%" alt="Santhakumar K Project Universe - Animated Ecosystem" />
+<img src="./assets/project-universe.gif" width="100%" alt="Santhakumar K Project Universe - Animated Ecosystem" />
 
 <br />
 
@@ -155,7 +155,7 @@ I’m a **results-driven Full-Stack Developer and AI Engineer** with experience 
 
 ### Specialized Strengths
 
-<img src="./assets/specialized-strengths.svg" width="100%" alt="Specialized Strengths - Great Houses of Code" />
+<img src="./assets/specialized-strengths.gif" width="100%" alt="Specialized Strengths - Great Houses of Code" />
 
 ---
 
